@@ -3,7 +3,7 @@ function changeText() {
   let element = document.getElementById("myElement");
 
   // Изменяем текст элемента
-  element.innerHTML = "Привет, GPT-3.5dsdsdasds!";
+  element.innerHTML = "Beta";
 
   // Выводим новый текст элемента в консоль
   console.log(element.innerHTML);
