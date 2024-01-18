@@ -4,15 +4,19 @@
 
 <h2 id="myElement">Привет, мир!</h2>
 
+<button onclick="changeText()">Изменить текст</button>
+
 <script>
-  // Получаем элемент по его идентификатору
-  let element = document.getElementById("myElement");
+  function changeText() {
+    // Получаем элемент по его id
+    let element = document.getElementById("myElement");
 
-  // Изменяем содержимое элемента
-  element.innerHTML = "Привет, GPT-3.5!";
+    // Изменяем текст элемента
+    element.innerHTML = "Привет, GPT-3.5!";
 
-  // Выводим содержимое элемента
-  console.log(element.innerHTML);
+    // Выводим новый текст элемента в консоль
+    console.log(element.innerHTML);
+  }
 </script>
 
 </body>
