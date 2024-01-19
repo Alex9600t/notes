@@ -1,4 +1,4 @@
-let text = document.queryselector("imput").value
+let text = document.queryselector("input").value
 function changeText() {
   // Получаем элемент по его id
   let element = document.getElementById("myElement");
