@@ -1,3 +1,4 @@
+let text = document.queryselector("imput").value
 function changeText() {
   // Получаем элемент по его id
   let element = document.getElementById("myElement");
