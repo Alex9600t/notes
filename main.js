@@ -1,11 +1,21 @@
-let text = document.queryselector("input").value
-function changeText() {
-  // Получаем элемент по его id
-  let element = document.getElementById("myElement");
+let text = document.querySelector("#input").value
 
-  // Изменяем текст элемента
-  element.innerHTML = "Beta";
+const updateText = () => {
+  text = document.querySelector("#input").value
+}
 
-  // Выводим новый текст элемента в консоль
-  console.log(element.innerHTML);
+const saveText = () => {
+  updateText()
+
+  document.cookie = text
+}
+
+const loadText = (text) => {
+  updateText()
+
+  if (document.cookie) {
+    text = document.cookie
+  } else {
+    alert("Данных не найдено")
+  }
 }
