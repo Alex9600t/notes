@@ -1,20 +1,20 @@
-let text = document.querySelector("#input").value
+let text = document.querySelector("#input")
 
 const updateText = () => {
-  text = document.querySelector("#input").value
+  text = document.querySelector("#input")
 }
 
 const saveText = () => {
   updateText()
 
-  document.cookie = text
+  document.cookie = text.value
 }
 
-const loadText = (text) => {
+const loadText = () => {
   updateText()
 
   if (document.cookie) {
-    text = document.cookie
+    text.value = document.cookie
   } else {
     alert("Данных не найдено")
   }
