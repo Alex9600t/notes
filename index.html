@@ -2,13 +2,21 @@
 <html>
 
 <body>
+    <link rel="stylesheet" href="style.css">
     <h1>Заметки</h1>
 
-    <input type="text" id="input">
+    <textarea name="" id="input" cols="30" rows="10"></textarea>
 
-    <button onclick="saveText()">Сохранить текст</button>
 
-    <button onclick="loadText()">Загрузить текст</button>
+    <div>
+        <button onclick="saveText()">Сохранить текст</button>
+
+        <button onclick="loadText()">Загрузить текст</button>
+    </div>
+
+    <p class="res"></p>
+
+
 
     <script src="main.js"></script>
 </body>
